@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Indie+Flower&family=Lilita+One&family=Sora&display=swap" rel="stylesheet">
+
+	<title>Q4 | Project</title>
+
+	<style type="text/css">
+		body{
+			background-color: #CEC9D2;
+		}
+
+		#div0{
+			border-style: dotted;
+			border-width: 6px 6px 6px 6px;
+			border-color: #706D74;
+		}
+
+		#div1{
+			background-color: #575757;
+		}
+
+		#div2{
+			border-style: dashed;
+			border-width: 6px 6px 6px 6px;
+			border-color: #3D3D3D;
+		}
+
+		h1{
+			text-align: center;
+			color: #CECECE;
+			text-shadow: 2px 2px 5px #CCC6D2;
+			font-family: 'Lilita One', cursive;
+		}
+
+		#div3{
+			background-color: #88848B;
+		}
+
+		#div4{
+			border-style: dashed;
+			border-width: 6px 6px 6px 6px;
+			border-color: #706D74;
+			background-color: #A39DA9;
+		}
+
+		h3{
+			text-align: center;
+			color: #4E4556;
+			font-family: 'Lilita One', cursive;
+		}
+
+		#div5{
+			text-align: center;
+		}
+
+		label{
+			font-family: 'Darumadrop One', cursive;
+		}
+
+		#div6{
+			text-align: center;
+		}
+
+		button{
+			border-style: dashed;
+			border-width: 6px 6px 6px 6px;
+			border-color: #706D74;
+			padding: 3px;
+			font-family: 'Darumadrop One', cursive;		}
+
+	</style>
+
+</head>
+
+<body>
+	<br>
+	<div id="div0" class="container">
+		<br>
+		<div id="div1" class="container">
+			<br>
+			<div id="div2" class="container bg-secondary">
+				<br>
+				<h1>Unit Conversion Calculator</h1>
+				<br>
+			</div>
+			<br>
+		</div>
+		<br>
+
+		<div id="div3" class="container">
+			<br>
+			<div id="div4" class="container">
+				<br>
+				<h3>Length</h3>
+				<br>
+
+				<div id="div5">
+					<label>Milimeter</label>
+					<input type="number" name="mm" id="mm">
+				</div>
+				<br>
+
+				<div id="div6" class="row">
+					<div id="div7" class="col-4">
+						<div id="div8" class="container">
+							<button class="btn-block btn-secondary" type="submit" onclick="ConvertToCentimeter()">Convert to Centimeter</button>
+
+							<script type="text/javascript">
+								function ConvertToCentimeter() {
+									var mm = document.getElementById("mm").value;
+									var cm = Number (mm) / 10;
+									window.alert("The length in centimeters is " + cm)
+								}
+							</script>
+						</div>
+					</div>
+
+					<div id="div9" class="col-4">
+						<div id="div10" class="container">
+							<button class="btn-block btn-secondary" type="submit" onclick="ConvertToMeter()">Convert to Meter</button>
+
+							<script type="text/javascript">
+								function ConvertToMeter() {
+									var mm = document.getElementById("mm").value;
+									var m = Number (mm) / 1000;
+									window.alert("The length in meters is " + m)
+								}
+							</script>
+						</div>
+					</div>
+
+					<div id="div11" class="col-4">
+						<div id="div12" class="container">
+							<button class="btn-block btn-secondary" type="submit" onclick="ConvertToKilometer()">Convert to Kilometer</button>
+
+							<script type="text/javascript">
+								function ConvertToKilometer() {
+									var mm = document.getElementById("mm").value;
+									var km = Number (mm) / 1000000;
+									window.alert("The length in kilometers is " + km)
+								}
+							</script>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+		<br>
+	</div>
+	<br>
+
+</body>
+
+</html>
